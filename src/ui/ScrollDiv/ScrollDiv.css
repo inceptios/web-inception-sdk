@@ -1,0 +1,39 @@
+.main-div {
+    flex: 1;
+    overflow-y: auto;
+    /* Firefox fallback */
+    scrollbar-color: rgba(82, 19, 229, 0.5) rgba(159, 166, 238, 0.441);
+    scrollbar-width: thin;
+}
+
+/* --- WebKit (Chrome, Edge, Safari) Custom Scrollbar --- */
+
+/* 1. The sleek scrollbar gutter */
+.main-div::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* 2. Transparent track so the OS background shows through */
+.main-div::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* 3. The frosted glass thumb */
+.main-div::-webkit-scrollbar-thumb {
+    background: rgba(82, 19, 229, 0.5);
+    /* Translucent red */
+    border-radius: 8px;
+
+    /* Pure CSS glassmorphism effects */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Optional: subtle border to define the edge of the glass */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 4. Hover state for better UX */
+.main-div::-webkit-scrollbar-thumb:hover {
+    background: rgba(82, 19, 229, 0.5);
+}

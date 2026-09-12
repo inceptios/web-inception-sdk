@@ -1,0 +1,13 @@
+.button{
+    border:none;
+    background: rgb(244, 244, 244);
+    border-radius: 6px;
+}
+
+.primary{
+    background: rgb(144, 211, 228);
+}
+
+.secondary{
+    background: rgb(205, 233, 240);
+}
