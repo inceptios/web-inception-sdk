@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0);
+    color: var(--window-text);
 
     .menu-bar {
         display: flex;
@@ -153,7 +154,7 @@
                 width: 4px;
                 height: 100%;
                 margin: auto;
-                background-color: #f0f5f5;
+                background-color: var(--window-text,#323232);
                 transition: background-color 0.2s;
                 touch-action: none;
                 z-index: 5;

@@ -5,7 +5,7 @@
 }
 
 .primary{
-    background: rgb(144, 211, 228);
+    background: var(--primary);
 }
 
 .secondary{

@@ -1,6 +1,7 @@
 import { useRef, useState, type FC, type ReactNode } from "react"
 
 import './Scaffold.css'
+import '../index.css'
 
 export interface ScaffoldProps {
     leftSideBar?: ReactNode,

@@ -1,5 +1,6 @@
 import React, { type ButtonHTMLAttributes } from 'react';
 import './Button.css'
+import '../index.css'
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'default' | 'secondary'
