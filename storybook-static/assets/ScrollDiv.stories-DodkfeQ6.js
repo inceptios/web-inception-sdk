@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{v as t}from"./iframe-Bp7gCeUi.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";import"./ui-DTBrBiiv.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({children:e})=>(0,r.jsx)(`div`,{className:`main-div`,children:e}),i.__docgenInfo={description:``,methods:[],displayName:`ScrollDiv`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:``}}}})))()}var o,s,c,l;function u(){return(u=e((()=>{a(),o=n(),s={title:`Core/ScrollDiv`,parameters:{layout:`fullscreen`},tags:[`autodocs`],argTypes:{children:{control:!1}},component:i},c={args:{children:(0,o.jsx)(`p`,{children:`Some thing`})}},l=[`Default`],c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
-  args: {
-    children: <p>Some thing</p>
-  }
-}`,...c.parameters?.docs?.source}}}})))()}u();export{c as Default,l as __namedExportsOrder,s as default};
