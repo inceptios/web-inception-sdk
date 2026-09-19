@@ -1,7 +1,7 @@
 {
   "name": "web-inception-sdk",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/web-inception-sdk.cjs.js",
   "module": "./dist/web-inception-sdk.es.js",

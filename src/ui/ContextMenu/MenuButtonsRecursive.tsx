@@ -4,10 +4,11 @@ import type { menuItem } from "./types"
 
 type menuButtonsRecersiveProps = {
     menuItem: menuItem[],
-    onButtonClick: React.RefObject<((id: string) => void) | null>
+    onButtonClick: React.RefObject<((id: string) => void) | null>,
+    onClose?:()=>void
 }
 
-export const MenuButtonsRecersive = ({ menuItem, onButtonClick }: menuButtonsRecersiveProps) => {
+export const MenuButtonsRecersive = ({ menuItem, onButtonClick,onClose }: menuButtonsRecersiveProps) => {
 
     const [activeSubMenuId, setActiveSubMenuId] = useState<string | null>(null)
 
@@ -31,6 +32,7 @@ export const MenuButtonsRecersive = ({ menuItem, onButtonClick }: menuButtonsRec
                         onClick={() => {
                             if (!item.items) {
                                 onButtonClick.current?.(item.menuId)
+                                onClose?.()
                             }
                         }}
                     >
@@ -59,6 +61,7 @@ export const MenuButtonsRecersive = ({ menuItem, onButtonClick }: menuButtonsRec
                         <MenuButtonsRecersive
                             menuItem={item.items}
                             onButtonClick={onButtonClick}
+                            onClose={onClose}
                         />
                     </div>}
                 </div>

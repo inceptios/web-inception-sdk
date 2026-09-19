@@ -8,10 +8,11 @@ type ContextMenuProps = {
     menuCoordinates:{x:number, y:number},
     contextRef : RefObject<HTMLDivElement | null>,
     functionRef : RefObject<((id: string) => void) | null>,
+    onClose?: ()=>void,
     menuItems:menuItem[]
 }
 
-export const ContextMenu = ({isContextMenuShown,menuCoordinates,contextRef,functionRef,menuItems}:ContextMenuProps) => {
+export const ContextMenu = ({isContextMenuShown,menuCoordinates,contextRef,functionRef,menuItems, onClose}:ContextMenuProps) => {
     return (
         isContextMenuShown && <div
             id="context-menu"
@@ -22,7 +23,7 @@ export const ContextMenu = ({isContextMenuShown,menuCoordinates,contextRef,funct
             }}
             ref={contextRef}
         >
-            <MenuButtonsRecersive menuItem={menuItems} onButtonClick={functionRef} />
+            <MenuButtonsRecersive menuItem={menuItems} onButtonClick={functionRef} onClose={onClose}/>
         </div>
   )
 }
