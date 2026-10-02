@@ -49,7 +49,7 @@
     }
 
     .sub-menu-more-options {
-        width: inherit;
+        width: max-content;
         top: anchor(top);
         left: anchor(right);
         z-index: 12;

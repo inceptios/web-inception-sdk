@@ -52,3 +52,26 @@ export const Default: Story = {
     functionRef: { current :null }
   },
 };
+
+export const LongerName: Story = {
+  args:{
+    isContextMenuShown:true,
+    menuCoordinates:{x:0,y:0},
+    menuItems:[
+      {
+        menuId:"open",
+        title:"Open bigger",
+        enabled:true,
+        items:[
+          {
+            menuId:"open",
+            title: "Open something",
+            enabled:true
+          }
+        ]
+      }
+    ],
+    contextRef:{current:null},
+    functionRef: { current :null }
+  },
+};

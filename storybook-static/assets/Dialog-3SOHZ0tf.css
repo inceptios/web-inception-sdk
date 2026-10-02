@@ -1,0 +1,1 @@
+#dialog-box{background-color:var(--secondary);border-radius:20px;padding:1rem}#dialog-box #dialog-body{padding:1rem}#dialog-box-backdrop{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);background-color:#d7d8d950;border-radius:calc(20px - .3rem);justify-content:center;align-items:center;width:100%;height:100%;display:flex;position:absolute;top:0;left:0}

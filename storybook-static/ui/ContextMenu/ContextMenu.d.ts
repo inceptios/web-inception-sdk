@@ -1,4 +1,4 @@
-import { RefObject } from '../../../node_modules/react';
+import { RefObject } from '../../../../node_modules/react';
 import { menuItem } from './types';
 type ContextMenuProps = {
     isContextMenuShown: boolean;
@@ -8,7 +8,8 @@ type ContextMenuProps = {
     };
     contextRef: RefObject<HTMLDivElement | null>;
     functionRef: RefObject<((id: string) => void) | null>;
+    onClose?: () => void;
     menuItems: menuItem[];
 };
-export declare const ContextMenu: ({ isContextMenuShown, menuCoordinates, contextRef, functionRef, menuItems }: ContextMenuProps) => false | import("react").JSX.Element;
+export declare const ContextMenu: ({ isContextMenuShown, menuCoordinates, contextRef, functionRef, menuItems, onClose }: ContextMenuProps) => false | import("react").JSX.Element;
 export {};

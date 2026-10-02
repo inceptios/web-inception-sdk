@@ -1,4 +1,4 @@
-import { FC, ReactNode } from '../../../node_modules/react';
+import { FC, ReactNode } from '../../../../node_modules/react';
 export interface ScaffoldProps {
     leftSideBar?: ReactNode;
     rightSideBar?: ReactNode;

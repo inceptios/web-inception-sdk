@@ -1,0 +1,9 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";var n,r;function i(){return(i=e((()=>{n=t(),r=({dialogTitle:e,children:t,confirmButton:r,dismissButton:i,onDismiss:a,...o})=>(0,n.jsx)(`div`,{id:`dialog-box-backdrop`,onClick:e=>{e.stopPropagation(),a()},children:(0,n.jsxs)(`div`,{id:`dialog-box`,onClick:e=>{e.preventDefault(),e.stopPropagation()},...o,children:[e,(0,n.jsx)(`div`,{id:`dialog-body`,children:t}),(0,n.jsxs)(`div`,{className:`action-btns`,children:[i,r]})]})}),r.__docgenInfo={description:``,methods:[],displayName:`DialogBox`,props:{dialogTitle:{required:!0,tsType:{name:`ReactNode`},description:``},children:{required:!0,tsType:{name:`ReactNode`},description:``},confirmButton:{required:!0,tsType:{name:`ReactNode`},description:``},dismissButton:{required:!0,tsType:{name:`ReactNode`},description:``},onDismiss:{required:!0,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:``}}}})))()}var a,o,s,c;function l(){return(l=e((()=>{i(),a=t(),o={title:`Core/Dialog`,tags:[`autodocs`],component:r},s={args:{dialogTitle:(0,a.jsx)(`h3`,{children:`Header`}),children:(0,a.jsx)(`p`,{children:`body`}),confirmButton:(0,a.jsx)(`button`,{children:`Confirm `}),dismissButton:(0,a.jsx)(`button`,{children:`Cancel`}),onDismiss:()=>{}}},c=[`Default`],s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    "dialogTitle": <h3>Header</h3>,
+    "children": <p>body</p>,
+    "confirmButton": <button>Confirm </button>,
+    "dismissButton": <button>Cancel</button>,
+    "onDismiss": () => {}
+  }
+}`,...s.parameters?.docs?.source}}}})))()}l();export{s as Default,c as __namedExportsOrder,o as default};
